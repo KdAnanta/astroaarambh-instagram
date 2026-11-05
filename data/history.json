@@ -1,14 +1,22 @@
 [
- {
-  "date": "2026-11-06",
-  "stories": [
-   "money-magnet-gents-wallet",
-   "dark-green-zibu-wealth-symbol-womens-sling-bag",
-   "money-magnet-ladies-purse",
-   "7-horses-on-raw-pyrite-frame",
-   "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6"
-  ],
-  "post": "dark-green-gold-detail-women-s-success-leather-wallet",
-  "published": false
- }
+  {
+    "date": "2026-11-06",
+    "stories": [
+      "money-magnet-gents-wallet",
+      "dark-green-zibu-wealth-symbol-womens-sling-bag",
+      "money-magnet-ladies-purse",
+      "7-horses-on-raw-pyrite-frame",
+      "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6"
+    ],
+    "post": "dark-green-gold-detail-women-s-success-leather-wallet",
+    "published": true,
+    "story_media_ids": [
+      "18032965022687507",
+      "18374362561215203",
+      "18117502013595100",
+      "17987655548891953",
+      "17967388145983222"
+    ],
+    "post_media_id": "18029461280872152"
+  }
 ]
