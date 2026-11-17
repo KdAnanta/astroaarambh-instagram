@@ -119,6 +119,16 @@ def main():
     post_pool = sorted(ready, key=lambda p: (last(p["slug"], "post"), p in story_ps, rnd.random()))
     post_p = post_pool[0]
 
+    # Ready-made post designs uploaded by the owner (posts/ + data/post_images.json) are
+    # posted as they are, one per night, least recently posted first, then in planned order.
+    pi_path = ROOT / "data/post_images.json"
+    post_imgs = [x for x in (json.loads(pi_path.read_text()) if pi_path.exists() else [])
+                 if (ROOT / "posts" / x["file"]).exists()]
+    def last_img(f):
+        ds = [h["date"] for h in history if h.get("post_image") == f]
+        return max(ds) if ds else ""
+    ready_img = sorted(post_imgs, key=lambda x: (last_img(x["file"]), x.get("order", 999)))[0] if post_imgs else None
+
     out = ROOT / "out" / today
     out.mkdir(parents=True, exist_ok=True)
     month = dt.date.fromisoformat(today).strftime("%B %Y").upper()
@@ -161,21 +171,41 @@ def main():
             manifest["stories"].append({"image_url": f"{RAW}/out/{today}/{name}", "slug": p["slug"], "name": p["name"],
                                         "price": p["price"], "mrp": p["mrp"], "url": p.get("url"),
                                         "design": f"{lay}:{pal}"})
+        if ready_img:
+            from PIL import Image as _I
+            name = "post-" + re.sub(r"[^a-z0-9]+", "-", ready_img["file"].rsplit(".", 1)[0].lower()).strip("-") + ".jpg"
+            _I.open(ROOT / "posts" / ready_img["file"]).convert("RGB").save(out / name, "JPEG", quality=95, subsampling=0)
+            br.close()
+    if not ready_img:
+      with sync_playwright() as pw:
+        import shutil
+        br = pw.chromium.launch(executable_path=shutil.which("google-chrome") or shutil.which("chromium") or None)
+        page = br.new_page()
         spec, uri, a = art(post_p)
         lay, pal = post_d
         name = f"post-{lay}-{post_p['slug'][:50]}.jpg"
         designs.shoot(page, designs.build("post", lay, pal, spec, uri, a, month), out / name, "post")
         br.close()
+    if ready_img:
+        x = ready_img
+        manifest["post"] = {"image_url": f"{RAW}/out/{today}/{name}", "source": "ready-made", "file": x["file"],
+                            "slug": x["slug"], "name": x["name"], "price": x["price"], "mrp": x["mrp"], "url": x["url"],
+                            "rating": x.get("rating"), "reviews": x.get("reviews"), "category": x.get("category"),
+                            "benefits": x.get("benefits", []), "stones": x.get("stones", []),
+                            "keywords": x.get("keywords", []), "hashtags": x.get("hashtags", [])}
+        lay, pal = "ready", x["file"]
     c = post_p["copy"]
-    manifest["post"] = {"image_url": f"{RAW}/out/{today}/{name}", "slug": post_p["slug"], "name": post_p["name"],
+    if not ready_img:
+      manifest["post"] = {"image_url": f"{RAW}/out/{today}/{name}", "slug": post_p["slug"], "name": post_p["name"],
                         "price": post_p["price"], "mrp": post_p["mrp"], "url": post_p.get("url"),
                         "rating": post_p.get("rating"), "reviews": post_p.get("reviews"),
                         "hashtags": c.get("hashtags", []), "design": f"{lay}:{pal}"}
 
     (ROOT / "data/latest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
     history = [h for h in history if h["date"] != today]
-    history.append({"date": today, "stories": [p["slug"] for p in story_ps], "post": post_p["slug"],
-                    "story_designs": [f"story:{l}:{i}" for l, i in story_ds], "post_design": f"post:{lay}:{pal}",
+    history.append({"date": today, "stories": [p["slug"] for p in story_ps],
+                    "post": manifest["post"]["slug"], "post_image": ready_img["file"] if ready_img else None,
+                    "story_designs": [f"story:{l}:{i}" for l, i in story_ds], "post_design": None if ready_img else f"post:{lay}:{pal}",
                     "published": False})
     hist_path.write_text(json.dumps(history[-400:], indent=1))
 

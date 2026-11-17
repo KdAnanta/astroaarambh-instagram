@@ -8,7 +8,12 @@ Every night at 12:00 AM IST a scheduled Claude task:
 3. Renders them with the approved designs (`tools/render.py`), saved in `out/<date>/`
 4. Publishes them to Instagram through Windsor.ai, with a caption and hashtags on the Post
 
-## Adding a product photo
+## Ready-made post designs (feed posts)
+Upload finished post images to `posts/` and add a line for each to `data/post_images.json`
+(product name, link, price). One is posted every night, exactly as uploaded, rotating so none
+repeats until all have been posted.
+
+## Adding a product photo (Stories)
 Upload the original photo to `photos/`, named with the product name as it appears on the website
 (e.g. `Pyrite Peacock Frame for Prosperity and Protection.webp`). Photos are never edited.
 
