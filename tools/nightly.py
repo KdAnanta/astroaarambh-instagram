@@ -16,11 +16,10 @@ import datetime as dt, json, pathlib, random, re, subprocess, sys, time, unicode
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-import render  # noqa: E402
+import designs  # noqa: E402
 
 RAW = "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main"
 STORIES = 5
-THEMES = list(render.THEMES)  # emerald, maroon, royal, earth, plum
 
 AUTO_BENEFITS = [
     (r"wallet|purse|bag|money|wealth|pyrite|zibu|kuber", [["wealth", "Attracts Wealth"], ["coins", "Brings Abundance"], ["shield", "Protects Savings"]]),
@@ -98,7 +97,7 @@ def wait_live(urls, timeout=300):
 def main():
     picks = json.loads(pathlib.Path(sys.argv[1]).read_text())
     push = "--no-push" not in sys.argv
-    today = (dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)).date().isoformat()
+    today = (dt.datetime.now(dt.timezone.utc).replace(tzinfo=None) + dt.timedelta(hours=5, minutes=30)).date().isoformat()
     copies = json.loads((ROOT / "data/products.json").read_text())
     hist_path = ROOT / "data/history.json"
     history = json.loads(hist_path.read_text()) if hist_path.exists() else []
@@ -122,30 +121,62 @@ def main():
 
     out = ROOT / "out" / today
     out.mkdir(parents=True, exist_ok=True)
-    day = dt.date.fromisoformat(today).toordinal()
+    month = dt.date.fromisoformat(today).strftime("%B %Y").upper()
     manifest = {"date": today, "account_id": "17841422351662463", "stories": [], "post": None,
                 "missing_photos": [{"name": m["name"], "url": m.get("url")} for m in missing]}
 
-    for i, p in enumerate(story_ps):
-        c = p["copy"]
-        spec = {**c, "image": str(to_png(p["photo"])), "price": p["price"], "mrp": p["mrp"]}
-        name = f"story-{i+1}-{p['slug'][:60]}.jpg"
-        render.shoot(render.story_html(spec, THEMES[(day + i) % len(THEMES)]), str(out / name), 1080, 1920)
-        manifest["stories"].append({"image_url": f"{RAW}/out/{today}/{name}", "slug": p["slug"], "name": p["name"],
-                                    "price": p["price"], "mrp": p["mrp"], "url": p.get("url")})
+    # Layout + palette rotation: least recently used layouts first, never the same
+    # layout twice in one night, and the palette for each layout also rotates.
+    used_l, used_c = {}, {}
+    for h in history:
+        for d in (h.get("story_designs") or []) + ([h["post_design"]] if h.get("post_design") else []):
+            used_c[d] = max(used_c.get(d, ""), h["date"])
+            k = d.split(":")[0] + ":" + d.split(":")[1]
+            used_l[k] = max(used_l.get(k, ""), h["date"])
+    def choose(kind, lib, n, avoid=()):
+        lays = sorted(lib, key=lambda l: (used_l.get(f"{kind}:{l}", ""), l in avoid, rnd.random()))[:n]
+        res = []
+        for l in lays:
+            pals = range(len(lib[l]["palettes"]))
+            res.append((l, sorted(pals, key=lambda i: (used_c.get(f"{kind}:{l}:{i}", ""), rnd.random()))[0]))
+        return res
+    story_ds = choose("story", designs.STORY, len(story_ps))
+    rnd.shuffle(story_ds)
+    post_d = choose("post", designs.POST, 1, avoid={l for l, _ in story_ds})[0]
 
+    from PIL import Image
+    from playwright.sync_api import sync_playwright
+    def art(p):
+        png = to_png(p["photo"])
+        w, h = Image.open(png).size
+        return {**p["copy"], "price": p["price"], "mrp": p["mrp"]}, png.resolve().as_uri(), w / h
+    with sync_playwright() as pw:
+        import shutil
+        br = pw.chromium.launch(executable_path=shutil.which("google-chrome") or shutil.which("chromium") or None)
+        page = br.new_page()
+        for i, (p, (lay, pal)) in enumerate(zip(story_ps, story_ds)):
+            spec, uri, a = art(p)
+            name = f"story-{i+1}-{lay}-{p['slug'][:50]}.jpg"
+            designs.shoot(page, designs.build("story", lay, pal, spec, uri, a, month), out / name, "story")
+            manifest["stories"].append({"image_url": f"{RAW}/out/{today}/{name}", "slug": p["slug"], "name": p["name"],
+                                        "price": p["price"], "mrp": p["mrp"], "url": p.get("url"),
+                                        "design": f"{lay}:{pal}"})
+        spec, uri, a = art(post_p)
+        lay, pal = post_d
+        name = f"post-{lay}-{post_p['slug'][:50]}.jpg"
+        designs.shoot(page, designs.build("post", lay, pal, spec, uri, a, month), out / name, "post")
+        br.close()
     c = post_p["copy"]
-    spec = {**c, "image": str(to_png(post_p["photo"])), "price": post_p["price"], "mrp": post_p["mrp"]}
-    name = f"post-{post_p['slug'][:60]}.jpg"
-    render.shoot(render.post_html(spec), str(out / name), 1080, 1350)
     manifest["post"] = {"image_url": f"{RAW}/out/{today}/{name}", "slug": post_p["slug"], "name": post_p["name"],
                         "price": post_p["price"], "mrp": post_p["mrp"], "url": post_p.get("url"),
                         "rating": post_p.get("rating"), "reviews": post_p.get("reviews"),
-                        "hashtags": c.get("hashtags", [])}
+                        "hashtags": c.get("hashtags", []), "design": f"{lay}:{pal}"}
 
     (ROOT / "data/latest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
     history = [h for h in history if h["date"] != today]
-    history.append({"date": today, "stories": [p["slug"] for p in story_ps], "post": post_p["slug"], "published": False})
+    history.append({"date": today, "stories": [p["slug"] for p in story_ps], "post": post_p["slug"],
+                    "story_designs": [f"story:{l}:{i}" for l, i in story_ds], "post_design": f"post:{lay}:{pal}",
+                    "published": False})
     hist_path.write_text(json.dumps(history[-400:], indent=1))
 
     if push:
