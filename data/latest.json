@@ -1,95 +1,91 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/story-1-glass-dark-green-gold-detail-women-s-success-leather-wal.jpg",
-      "slug": "dark-green-gold-detail-women-s-success-leather-wallet",
-      "name": "Dark Green Gold-Detail Women’s Success Leather Wallet",
-      "price": 490,
-      "mrp": 750,
-      "url": "https://astroaarambh.store/products/dark-green-gold-detail-women-s-success-leather-wallet",
-      "design": "glass:2"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/story-1-arch-dark-green-zibu-wealth-symbol-womens-sling-bag.jpg",
+      "slug": "dark-green-zibu-wealth-symbol-womens-sling-bag",
+      "name": "Dark Green Zibu Wealth Symbol Women’s Sling Bag",
+      "price": 800,
+      "mrp": 1250,
+      "url": "https://astroaarambh.store/products/dark-green-zibu-wealth-symbol-womens-sling-bag",
+      "design": "arch:2"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/story-2-polaroid-money-magnet-gents-wallet.jpg",
-      "slug": "money-magnet-gents-wallet",
-      "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
-      "price": 400,
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/story-2-cosmic-pyrite-lapis-peacock-frame-capsule-shape.jpg",
+      "slug": "pyrite-lapis-peacock-frame-capsule-shape",
+      "name": "Pyrite Peacock Frame for Prosperity and Protection",
+      "price": 701,
+      "mrp": 1200,
+      "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
+      "design": "cosmic:0"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/story-3-minimal-7-horses-on-raw-pyrite-frame.jpg",
+      "slug": "7-horses-on-raw-pyrite-frame",
+      "name": "7 Horses in Raw Pyrite Frame for Career Success",
+      "price": 301,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
-      "design": "polaroid:1"
+      "url": "https://astroaarambh.store/products/7-horses-on-raw-pyrite-frame",
+      "design": "minimal:1"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/story-3-boldsale-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
-      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "name": "Prosperity Boosting Pyrite Pyramid",
-      "price": 450,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "design": "boldsale:0"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/story-4-checklist-cancer-zodiac-bracelet.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/story-4-magazine-cancer-zodiac-bracelet.jpg",
       "slug": "cancer-zodiac-bracelet",
       "name": "Cancer (कर्क राशि) Zodiac Howlite & Milky Quartz Healing Bracelet",
       "price": 450,
       "mrp": 700,
       "url": "https://astroaarambh.store/products/cancer-zodiac-bracelet",
-      "design": "checklist:0"
+      "design": "magazine:1"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/story-5-editorial-money-magnet-ladies-purse.jpg",
-      "slug": "money-magnet-ladies-purse",
-      "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
-      "price": 490,
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/story-5-checklist-money-magnet-gents-wallet.jpg",
+      "slug": "money-magnet-gents-wallet",
+      "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
+      "price": 400,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
-      "design": "editorial:2"
+      "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
+      "design": "checklist:2"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-18/post-scorpio-bracelet-with-selenite-plate.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-19/post-forest-green-money-magnet-wallet-2.jpg",
     "source": "ready-made",
-    "file": "Scorpio Bracelet with Selenite Plate.png",
-    "slug": "scorpio-zodiac-metal-bracelet-with-complimentary-raw-selenite-plate",
-    "name": "Scorpio (वृश्चिक राशि) Metal Zodiac Bracelet with Complimentary Raw Selenite Plate",
-    "price": 550,
-    "mrp": 999,
-    "url": "https://astroaarambh.store/products/scorpio-zodiac-metal-bracelet-with-complimentary-raw-selenite-plate",
-    "rating": 4.7,
-    "reviews": 12,
-    "category": "zodiac-bracelet",
+    "file": "Forest Green Money Magnet Wallet (2).png",
+    "slug": "money-magnet-gents-wallet",
+    "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
+    "price": 400,
+    "mrp": 700,
+    "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
+    "rating": 4.8,
+    "reviews": 18,
+    "category": "wallet",
     "benefits": [
-      "Enhances Intuition & Inner Strength",
-      "Provides Protection & Emotional Stability",
-      "Boosts Focus & Determination",
-      "Attracts Transformation & Success"
+      "Attracts Money Flow",
+      "Enhances Wealth & Financial Stability",
+      "Supports Career & Business Growth",
+      "Brings Abundance & Prosperity"
     ],
     "stones": [],
     "keywords": [
-      "Scorpio bracelet",
-      "Scorpio zodiac bracelet",
-      "Vrishchik rashi bracelet",
-      "zodiac metal bracelet",
-      "selenite plate",
-      "birthday gift for Scorpio zodiac",
-      "Scorpio season Oct 23 - Nov 21"
+      "money magnet wallet",
+      "wallet for men",
+      "lucky wallet",
+      "808 520 741 switchword",
+      "wealth wallet",
+      "gift for him"
     ],
     "hashtags": [
-      "scorpio",
-      "scorpiozodiac",
-      "scorpioseason",
-      "scorpiobracelet",
-      "vrishchikrashi",
-      "zodiacbracelet",
-      "zodiacsigns",
-      "horoscope",
-      "astrology",
-      "crystalbracelet",
-      "selenite",
-      "birthstone",
-      "giftideas"
+      "moneymagnet",
+      "menswallet",
+      "luckywallet",
+      "808520741",
+      "switchwords",
+      "wealthattraction",
+      "lawofattraction",
+      "manifestmoney",
+      "giftforhim",
+      "abundance"
     ]
   },
   "missing_photos": []
