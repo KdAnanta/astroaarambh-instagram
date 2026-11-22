@@ -1,87 +1,87 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/story-1-editorial-dark-green-zibu-wealth-symbol-womens-sling-bag.jpg",
-      "slug": "dark-green-zibu-wealth-symbol-womens-sling-bag",
-      "name": "Dark Green Zibu Wealth Symbol Women’s Sling Bag",
-      "price": 800,
-      "mrp": 1250,
-      "url": "https://astroaarambh.store/products/dark-green-zibu-wealth-symbol-womens-sling-bag",
-      "design": "editorial:1"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-1-boldsale-dark-green-gold-detail-women-s-success-leather-wal.jpg",
+      "slug": "dark-green-gold-detail-women-s-success-leather-wallet",
+      "name": "Dark Green Gold-Detail Women’s Success Leather Wallet",
+      "price": 490,
+      "mrp": 750,
+      "url": "https://astroaarambh.store/products/dark-green-gold-detail-women-s-success-leather-wallet",
+      "design": "boldsale:0"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/story-2-polaroid-money-magnet-gents-wallet.jpg",
-      "slug": "money-magnet-gents-wallet",
-      "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
-      "price": 400,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
-      "design": "polaroid:2"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/story-3-minimal-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
-      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "name": "Prosperity Boosting Pyrite Pyramid",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-2-cosmic-cancer-zodiac-bracelet.jpg",
+      "slug": "cancer-zodiac-bracelet",
+      "name": "Cancer (कर्क राशि) Zodiac Howlite & Milky Quartz Healing Bracelet",
       "price": 450,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "design": "minimal:2"
+      "url": "https://astroaarambh.store/products/cancer-zodiac-bracelet",
+      "design": "cosmic:2"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/story-4-arch-7-horses-on-raw-pyrite-frame.jpg",
-      "slug": "7-horses-on-raw-pyrite-frame",
-      "name": "7 Horses in Raw Pyrite Frame for Career Success",
-      "price": 301,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/7-horses-on-raw-pyrite-frame",
-      "design": "arch:1"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-3-glass-pyrite-lapis-peacock-frame-capsule-shape.jpg",
+      "slug": "pyrite-lapis-peacock-frame-capsule-shape",
+      "name": "Pyrite Peacock Frame for Prosperity and Protection",
+      "price": 701,
+      "mrp": 1200,
+      "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
+      "design": "glass:2"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/story-5-glass-money-magnet-ladies-purse.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-4-magazine-money-magnet-ladies-purse.jpg",
       "slug": "money-magnet-ladies-purse",
       "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
       "price": 490,
       "mrp": 700,
       "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
-      "design": "glass:0"
+      "design": "magazine:0"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-5-checklist-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
+      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
+      "name": "Prosperity Boosting Pyrite Pyramid",
+      "price": 450,
+      "mrp": 700,
+      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
+      "design": "checklist:0"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-22/post-sagittarius-bracelet-on-selenite-plate.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/post-aries-zodiac-bracelet-with-free-selenite-plate.jpg",
     "source": "ready-made",
-    "file": "Sagittarius Bracelet on Selenite Plate.png",
-    "slug": "sagittarius-zodiac-metal-bracelet-with-free-raw-selenite-plate",
-    "name": "Sagittarius (धनु राशि) Metal Zodiac Bracelet with Free Raw Selenite Plate",
+    "file": "Aries Zodiac Bracelet with Free Selenite Plate.png",
+    "slug": "aries-zodiac-metal-bracelet-with-free-raw-selenite-plate",
+    "name": "Aries (मेष राशि) Metal Zodiac Bracelet with Free Raw Selenite Plate",
     "price": 550,
     "mrp": 999,
-    "url": "https://astroaarambh.store/products/sagittarius-zodiac-metal-bracelet-with-free-raw-selenite-plate",
+    "url": "https://astroaarambh.store/products/aries-zodiac-metal-bracelet-with-free-raw-selenite-plate",
     "rating": 4.6,
-    "reviews": 10,
+    "reviews": 16,
     "category": "zodiac-bracelet",
     "benefits": [
-      "Enhances Focus & Goal Achievement",
-      "Attracts Growth, Success & Wealth",
-      "Provides Protection & Positive Energy",
-      "Brings Optimism, Confidence & Clarity"
+      "Boosts Energy & Confidence",
+      "Enhances Focus & Decision-Making",
+      "Attracts Growth & New Opportunities",
+      "Brings Protection & Positive Energy"
     ],
     "stones": [],
     "keywords": [
-      "Sagittarius bracelet",
-      "Sagittarius zodiac bracelet",
-      "Dhanu rashi bracelet",
+      "Aries bracelet",
+      "Aries zodiac bracelet",
+      "Mesh rashi bracelet",
       "zodiac metal bracelet",
       "selenite plate",
-      "birthday gift for Sagittarius zodiac",
-      "Sagittarius season Nov 22 - Dec 21"
+      "birthday gift for Aries zodiac",
+      "Aries season Mar 21 - Apr 19"
     ],
     "hashtags": [
-      "sagittarius",
-      "sagittariuszodiac",
-      "sagittariusseason",
-      "sagittariusbracelet",
-      "dhanurashi",
+      "aries",
+      "arieszodiac",
+      "ariesseason",
+      "ariesbracelet",
+      "meshrashi",
       "zodiacbracelet",
       "zodiacsigns",
       "horoscope",
