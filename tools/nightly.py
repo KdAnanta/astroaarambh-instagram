@@ -11,6 +11,14 @@ designs, write data/latest.json (public raw URLs + product facts), update
 data/history.json, then commit, push and wait until every URL is live.
 
 Product photos in photos/ are used whole and unedited.
+
+Ready-made Stories: images the owner uploads to stories/ are posted exactly as
+uploaded (only converted to JPEG, never cropped or redesigned), each one once,
+in file-name order, up to 5 a night. Any Story slots left over are filled with
+Top Picks renders.
+
+Ready-made Posts: images in posts/ need an entry in data/post_images.json.
+Files without one are listed in the manifest as "unregistered_posts".
 """
 import datetime as dt, json, pathlib, random, re, subprocess, sys, time, unicodedata, urllib.request
 
@@ -107,7 +115,12 @@ def main():
         c = {**auto_copy(p), **copies.get(p["slug"], {})}
         ph = find_photo(p, c)
         (ready if ph else missing).append({**p, "copy": c, "photo": ph})
-    if len(ready) < 2:
+    IMG = (".png", ".jpg", ".jpeg", ".webp")
+    done_st = {f for h in history for f in (h.get("story_images") or [])}
+    sdir = ROOT / "stories"
+    ready_st = sorted([f.name for f in sdir.iterdir() if f.suffix.lower() in IMG and f.name not in done_st]
+                      if sdir.exists() else [], key=str.lower)[:STORIES]
+    if len(ready) < 2 and len(ready_st) < STORIES:
         sys.exit(f"Not enough products with photos. Missing photos for: {[m['name'] for m in missing]}")
 
     def last(slug, kind):
@@ -115,15 +128,18 @@ def main():
         return max(ds) if ds else ""
     rnd = random.Random(today)
     order = sorted(ready, key=lambda p: (last(p["slug"], "story"), rnd.random()))
-    story_ps = order[:min(STORIES, len(order))]
+    story_ps = order[:min(STORIES - len(ready_st), len(order))]
     post_pool = sorted(ready, key=lambda p: (last(p["slug"], "post"), p in story_ps, rnd.random()))
     post_p = post_pool[0]
 
     # Ready-made post designs uploaded by the owner (posts/ + data/post_images.json) are
     # posted as they are, one per night, least recently posted first, then in planned order.
     pi_path = ROOT / "data/post_images.json"
-    post_imgs = [x for x in (json.loads(pi_path.read_text()) if pi_path.exists() else [])
-                 if (ROOT / "posts" / x["file"]).exists()]
+    pi_all = json.loads(pi_path.read_text()) if pi_path.exists() else []
+    post_imgs = [x for x in pi_all if (ROOT / "posts" / x["file"]).exists()]
+    known = {x["file"] for x in pi_all}
+    unregistered = sorted(f.name for f in (ROOT / "posts").iterdir()
+                          if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp") and f.name not in known)
     def last_img(f):
         ds = [h["date"] for h in history if h.get("post_image") == f]
         return max(ds) if ds else ""
@@ -133,7 +149,8 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     month = dt.date.fromisoformat(today).strftime("%B %Y").upper()
     manifest = {"date": today, "account_id": "17841422351662463", "stories": [], "post": None,
-                "missing_photos": [{"name": m["name"], "url": m.get("url")} for m in missing]}
+                "missing_photos": [{"name": m["name"], "url": m.get("url")} for m in missing],
+                "unregistered_posts": unregistered, "ready_stories_left": 0}
 
     # Layout + palette rotation: least recently used layouts first, never the same
     # layout twice in one night, and the palette for each layout also rotates.
@@ -164,7 +181,12 @@ def main():
         import shutil
         br = pw.chromium.launch(executable_path=shutil.which("google-chrome") or shutil.which("chromium") or None)
         page = br.new_page()
-        for i, (p, (lay, pal)) in enumerate(zip(story_ps, story_ds)):
+        for i, f in enumerate(ready_st):
+            name = f"story-{i+1}-ready-" + re.sub(r"[^a-z0-9]+", "-", f.rsplit(".", 1)[0].lower()).strip("-")[:50] + ".jpg"
+            Image.open(sdir / f).convert("RGB").save(out / name, "JPEG", quality=95, subsampling=0)
+            manifest["stories"].append({"image_url": f"{RAW}/out/{today}/{name}", "source": "ready-made",
+                                        "file": f, "design": "ready"})
+        for i, (p, (lay, pal)) in enumerate(zip(story_ps, story_ds), start=len(ready_st)):
             spec, uri, a = art(p)
             name = f"story-{i+1}-{lay}-{p['slug'][:50]}.jpg"
             designs.shoot(page, designs.build("story", lay, pal, spec, uri, a, month), out / name, "story")
@@ -203,7 +225,11 @@ def main():
 
     (ROOT / "data/latest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
     history = [h for h in history if h["date"] != today]
-    history.append({"date": today, "stories": [p["slug"] for p in story_ps],
+    if sdir.exists():
+        manifest["ready_stories_left"] = len([f for f in sdir.iterdir() if f.suffix.lower() in IMG
+                                              and f.name not in done_st and f.name not in ready_st])
+    (ROOT / "data/latest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+    history.append({"date": today, "stories": [p["slug"] for p in story_ps], "story_images": ready_st,
                     "post": manifest["post"]["slug"], "post_image": ready_img["file"] if ready_img else None,
                     "story_designs": [f"story:{l}:{i}" for l, i in story_ds], "post_design": None if ready_img else f"post:{lay}:{pal}",
                     "published": False})
