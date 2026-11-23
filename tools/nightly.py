@@ -119,7 +119,8 @@ def main():
     done_st = {f for h in history for f in (h.get("story_images") or [])}
     sdir = ROOT / "stories"
     ready_st = sorted([f.name for f in sdir.iterdir() if f.suffix.lower() in IMG and f.name not in done_st]
-                      if sdir.exists() else [], key=str.lower)[:STORIES]
+                      if sdir.exists() else [],
+                      key=lambda n: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", n.lower())])[:STORIES]
     if len(ready) < 2 and len(ready_st) < STORIES:
         sys.exit(f"Not enough products with photos. Missing photos for: {[m['name'] for m in missing]}")
 
