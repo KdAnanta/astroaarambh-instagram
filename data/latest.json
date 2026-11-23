@@ -1,96 +1,78 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-1-boldsale-dark-green-gold-detail-women-s-success-leather-wal.jpg",
-      "slug": "dark-green-gold-detail-women-s-success-leather-wallet",
-      "name": "Dark Green Gold-Detail Women’s Success Leather Wallet",
-      "price": 490,
-      "mrp": 750,
-      "url": "https://astroaarambh.store/products/dark-green-gold-detail-women-s-success-leather-wallet",
-      "design": "boldsale:0"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-1-ready-01-7.jpg",
+      "source": "ready-made",
+      "file": "01 7.png",
+      "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-2-cosmic-cancer-zodiac-bracelet.jpg",
-      "slug": "cancer-zodiac-bracelet",
-      "name": "Cancer (कर्क राशि) Zodiac Howlite & Milky Quartz Healing Bracelet",
-      "price": 450,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/cancer-zodiac-bracelet",
-      "design": "cosmic:2"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-2-ready-02-ladies-success-black.jpg",
+      "source": "ready-made",
+      "file": "02 ladies success black.png",
+      "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-3-glass-pyrite-lapis-peacock-frame-capsule-shape.jpg",
-      "slug": "pyrite-lapis-peacock-frame-capsule-shape",
-      "name": "Pyrite Peacock Frame for Prosperity and Protection",
-      "price": 701,
-      "mrp": 1200,
-      "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
-      "design": "glass:2"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-3-ready-03-money-gents-sky.jpg",
+      "source": "ready-made",
+      "file": "03 money gents sky.png",
+      "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-4-magazine-money-magnet-ladies-purse.jpg",
-      "slug": "money-magnet-ladies-purse",
-      "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
-      "price": 490,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
-      "design": "magazine:0"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-4-ready-04-money-ladies-green.jpg",
+      "source": "ready-made",
+      "file": "04 money ladies green.png",
+      "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/story-5-checklist-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
-      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "name": "Prosperity Boosting Pyrite Pyramid",
-      "price": 450,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "design": "checklist:0"
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-5-ready-05-prosperity-pyrite-pyramid-ad.jpg",
+      "source": "ready-made",
+      "file": "05 Prosperity Pyrite Pyramid Ad.png",
+      "design": "ready"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-23/post-aries-zodiac-bracelet-with-free-selenite-plate.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/post-emerald-money-magnet-wallet.jpg",
     "source": "ready-made",
-    "file": "Aries Zodiac Bracelet with Free Selenite Plate.png",
-    "slug": "aries-zodiac-metal-bracelet-with-free-raw-selenite-plate",
-    "name": "Aries (मेष राशि) Metal Zodiac Bracelet with Free Raw Selenite Plate",
-    "price": 550,
-    "mrp": 999,
-    "url": "https://astroaarambh.store/products/aries-zodiac-metal-bracelet-with-free-raw-selenite-plate",
-    "rating": 4.6,
-    "reviews": 16,
-    "category": "zodiac-bracelet",
+    "file": "Emerald Money Magnet Wallet.png",
+    "slug": "money-magnet-ladies-purse",
+    "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
+    "price": 490,
+    "mrp": 700,
+    "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
+    "rating": 4.7,
+    "reviews": 7,
+    "category": "wallet",
     "benefits": [
-      "Boosts Energy & Confidence",
-      "Enhances Focus & Decision-Making",
-      "Attracts Growth & New Opportunities",
-      "Brings Protection & Positive Energy"
+      "Attracts Money Flow",
+      "Enhances Financial Luck",
+      "Supports Career & Income Growth",
+      "Brings Abundance & Prosperity"
     ],
     "stones": [],
     "keywords": [
-      "Aries bracelet",
-      "Aries zodiac bracelet",
-      "Mesh rashi bracelet",
-      "zodiac metal bracelet",
-      "selenite plate",
-      "birthday gift for Aries zodiac",
-      "Aries season Mar 21 - Apr 19"
+      "money magnet wallet for women",
+      "lucky wallet for women",
+      "808 520 741 switchword",
+      "emerald green wallet",
+      "gift for her"
     ],
     "hashtags": [
-      "aries",
-      "arieszodiac",
-      "ariesseason",
-      "ariesbracelet",
-      "meshrashi",
-      "zodiacbracelet",
-      "zodiacsigns",
-      "horoscope",
-      "astrology",
-      "crystalbracelet",
-      "selenite",
-      "birthstone",
-      "giftideas"
+      "moneymagnet",
+      "womenswallet",
+      "luckywallet",
+      "808520741",
+      "switchwords",
+      "wealthattraction",
+      "lawofattraction",
+      "manifestation",
+      "giftforher",
+      "abundance"
     ]
   },
-  "missing_photos": []
+  "missing_photos": [],
+  "unregistered_posts": [],
+  "ready_stories_left": 7
 }
