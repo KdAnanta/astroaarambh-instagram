@@ -1,78 +1,85 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-1-ready-01-7.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/story-1-ready-06-luxurious-pyrite-peacock-frame-poster.jpg",
       "source": "ready-made",
-      "file": "01 7.png",
+      "file": "06 Luxurious Pyrite Peacock Frame Poster.png",
       "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-2-ready-02-ladies-success-black.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/story-2-ready-07-dark-green-wealth-symbol-sling-bag.jpg",
       "source": "ready-made",
-      "file": "02 ladies success black.png",
+      "file": "07 Dark Green Wealth Symbol Sling Bag.png",
       "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-3-ready-03-money-gents-sky.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/story-3-ready-08-money-gents-white.jpg",
       "source": "ready-made",
-      "file": "03 money gents sky.png",
+      "file": "08 Money gents white.png",
       "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-4-ready-04-money-ladies-green.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/story-4-ready-09-money-ladies-black.jpg",
       "source": "ready-made",
-      "file": "04 money ladies green.png",
+      "file": "09 money ladies black.png",
       "design": "ready"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/story-5-ready-05-prosperity-pyrite-pyramid-ad.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/story-5-ready-10-10.jpg",
       "source": "ready-made",
-      "file": "05 Prosperity Pyrite Pyramid Ad.png",
+      "file": "10 10.png",
       "design": "ready"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-24/post-emerald-money-magnet-wallet.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-25/post-taurus-bracelet-with-free-selenite-plate.jpg",
     "source": "ready-made",
-    "file": "Emerald Money Magnet Wallet.png",
-    "slug": "money-magnet-ladies-purse",
-    "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
-    "price": 490,
-    "mrp": 700,
-    "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
-    "rating": 4.7,
-    "reviews": 7,
-    "category": "wallet",
+    "file": "Taurus Bracelet with Free Selenite Plate.png",
+    "slug": "taurus-metal-bracelet-with-sunstone-carnelian-with-free-selenite-plate",
+    "name": "Taurus (वृषभ राशि) Metal Zodiac Bracelet with Sunstone & Carnelian with Free Selenite Plate",
+    "price": 550,
+    "mrp": 999,
+    "url": "https://astroaarambh.store/products/taurus-metal-bracelet-with-sunstone-carnelian-with-free-selenite-plate",
+    "rating": 5.0,
+    "reviews": 18,
+    "category": "zodiac-bracelet",
     "benefits": [
-      "Attracts Money Flow",
-      "Enhances Financial Luck",
-      "Supports Career & Income Growth",
-      "Brings Abundance & Prosperity"
+      "Brings Stability & Emotional Balance",
+      "Supports Wealth, Prosperity & Material Growth",
+      "Provides Protection & Grounding Energy"
     ],
-    "stones": [],
+    "stones": [
+      "Sunstone: boosts confidence, vitality & positivity",
+      "Carnelian: enhances motivation, courage & creativity"
+    ],
     "keywords": [
-      "money magnet wallet for women",
-      "lucky wallet for women",
-      "808 520 741 switchword",
-      "emerald green wallet",
-      "gift for her"
+      "Taurus bracelet",
+      "Taurus zodiac bracelet",
+      "Vrishabh rashi bracelet",
+      "zodiac metal bracelet",
+      "selenite plate",
+      "birthday gift for Taurus zodiac",
+      "Taurus season Apr 20 - May 20"
     ],
     "hashtags": [
-      "moneymagnet",
-      "womenswallet",
-      "luckywallet",
-      "808520741",
-      "switchwords",
-      "wealthattraction",
-      "lawofattraction",
-      "manifestation",
-      "giftforher",
-      "abundance"
+      "taurus",
+      "tauruszodiac",
+      "taurusseason",
+      "taurusbracelet",
+      "vrishabhrashi",
+      "zodiacbracelet",
+      "zodiacsigns",
+      "horoscope",
+      "astrology",
+      "crystalbracelet",
+      "selenite",
+      "birthstone",
+      "giftideas"
     ]
   },
   "missing_photos": [],
   "unregistered_posts": [],
-  "ready_stories_left": 7
+  "ready_stories_left": 2
 }
