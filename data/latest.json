@@ -1,89 +1,91 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/story-1-ready-11-ladies-success-gray.jpg",
-      "source": "ready-made",
-      "file": "11 ladies success Gray.png",
-      "design": "ready"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/story-2-ready-12-money-ladies-white.jpg",
-      "source": "ready-made",
-      "file": "12 money ladies white.png",
-      "design": "ready"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/story-3-arch-7-horses-on-raw-pyrite-frame.jpg",
-      "slug": "7-horses-on-raw-pyrite-frame",
-      "name": "7 Horses in Raw Pyrite Frame for Career Success",
-      "price": 301,
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-1-cosmic-money-magnet-ladies-purse.jpg",
+      "slug": "money-magnet-ladies-purse",
+      "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
+      "price": 490,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/7-horses-on-raw-pyrite-frame",
-      "design": "arch:2"
+      "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
+      "design": "cosmic:0"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/story-4-minimal-dark-green-zibu-wealth-symbol-womens-sling-bag.jpg",
-      "slug": "dark-green-zibu-wealth-symbol-womens-sling-bag",
-      "name": "Dark Green Zibu Wealth Symbol Women’s Sling Bag",
-      "price": 800,
-      "mrp": 1250,
-      "url": "https://astroaarambh.store/products/dark-green-zibu-wealth-symbol-womens-sling-bag",
-      "design": "minimal:1"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/story-5-editorial-money-magnet-gents-wallet.jpg",
-      "slug": "money-magnet-gents-wallet",
-      "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
-      "price": 400,
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-2-polaroid-cancer-zodiac-bracelet.jpg",
+      "slug": "cancer-zodiac-bracelet",
+      "name": "Cancer (कर्क राशि) Zodiac Howlite & Milky Quartz Healing Bracelet",
+      "price": 450,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
-      "design": "editorial:2"
+      "url": "https://astroaarambh.store/products/cancer-zodiac-bracelet",
+      "design": "polaroid:1"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-3-checklist-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
+      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
+      "name": "Prosperity Boosting Pyrite Pyramid",
+      "price": 450,
+      "mrp": 700,
+      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
+      "design": "checklist:2"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-4-glass-pyrite-lapis-peacock-frame-capsule-shape.jpg",
+      "slug": "pyrite-lapis-peacock-frame-capsule-shape",
+      "name": "Pyrite Peacock Frame for Prosperity and Protection",
+      "price": 701,
+      "mrp": 1200,
+      "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
+      "design": "glass:1"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-5-magazine-dark-green-gold-detail-women-s-success-leather-wal.jpg",
+      "slug": "dark-green-gold-detail-women-s-success-leather-wallet",
+      "name": "Dark Green Gold-Detail Women’s Success Leather Wallet",
+      "price": 490,
+      "mrp": 750,
+      "url": "https://astroaarambh.store/products/dark-green-gold-detail-women-s-success-leather-wallet",
+      "design": "magazine:1"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-26/post-gemini-metal-bracelet-with-free-selenite-plate.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/post-luxurious-pyrite-peacock-prosperity-frame.jpg",
     "source": "ready-made",
-    "file": "Gemini Metal Bracelet with Free Selenite Plate.png",
-    "slug": "gemini-zodiac-metal-bracelet-with-free-raw-selenite-plate",
-    "name": "Gemini (मिथुन राशि) Metal Zodiac Bracelet for Mental Clarity with Free Selenite Plate",
-    "price": 550,
-    "mrp": 999,
-    "url": "https://astroaarambh.store/products/gemini-zodiac-metal-bracelet-with-free-raw-selenite-plate",
+    "file": "Luxurious Pyrite Peacock Prosperity Frame.png",
+    "slug": "pyrite-lapis-peacock-frame-capsule-shape",
+    "name": "Pyrite Peacock Frame for Prosperity and Protection",
+    "price": 701,
+    "mrp": 1200,
+    "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
     "rating": 4.6,
-    "reviews": 9,
-    "category": "zodiac-bracelet",
+    "reviews": 5,
+    "category": "frame",
     "benefits": [
-      "Enhances Mental Clarity",
-      "Improves Communication & Expression",
-      "Brings Balance & Emotional Calm",
-      "Attracts New Opportunities & Growth"
+      "Attracts Wealth & Prosperity",
+      "Enhances Protection & Positive Energy",
+      "Promotes Growth, Success & Good Luck",
+      "Brings Stability & Abundance"
     ],
     "stones": [],
     "keywords": [
-      "Gemini bracelet",
-      "Gemini zodiac bracelet",
-      "Mithun rashi bracelet",
-      "zodiac metal bracelet",
-      "selenite plate",
-      "birthday gift for Gemini zodiac",
-      "Gemini season May 21 - Jun 20"
+      "pyrite peacock frame",
+      "vastu frame for home",
+      "peacock painting vastu",
+      "lapis lazuli",
+      "home decor for prosperity",
+      "housewarming gift"
     ],
     "hashtags": [
-      "gemini",
-      "geminizodiac",
-      "geminiseason",
-      "geminibracelet",
-      "mithunrashi",
-      "zodiacbracelet",
-      "zodiacsigns",
-      "horoscope",
-      "astrology",
-      "crystalbracelet",
-      "selenite",
-      "birthstone",
-      "giftideas"
+      "pyriteframe",
+      "peacock",
+      "vastu",
+      "vastudecor",
+      "vastushastra",
+      "homedecor",
+      "homedecorindia",
+      "lapislazuli",
+      "housewarminggift",
+      "prosperity"
     ]
   },
   "missing_photos": [],
