@@ -1,91 +1,95 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "account_id": "17841422351662463",
   "stories": [
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-1-cosmic-money-magnet-ladies-purse.jpg",
-      "slug": "money-magnet-ladies-purse",
-      "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
-      "price": 490,
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/story-1-editorial-money-magnet-gents-wallet.jpg",
+      "slug": "money-magnet-gents-wallet",
+      "name": "Money Magnet Wallet for Men | Forest Green Wealth Wallet",
+      "price": 400,
       "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
-      "design": "cosmic:0"
+      "url": "https://astroaarambh.store/products/money-magnet-gents-wallet",
+      "design": "editorial:0"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-2-polaroid-cancer-zodiac-bracelet.jpg",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/story-2-boldsale-7-horses-on-raw-pyrite-frame.jpg",
+      "slug": "7-horses-on-raw-pyrite-frame",
+      "name": "7 Horses in Raw Pyrite Frame for Career Success",
+      "price": 301,
+      "mrp": 700,
+      "url": "https://astroaarambh.store/products/7-horses-on-raw-pyrite-frame",
+      "design": "boldsale:1"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/story-3-minimal-dark-green-zibu-wealth-symbol-womens-sling-bag.jpg",
+      "slug": "dark-green-zibu-wealth-symbol-womens-sling-bag",
+      "name": "Dark Green Zibu Wealth Symbol Women’s Sling Bag",
+      "price": 800,
+      "mrp": 1250,
+      "url": "https://astroaarambh.store/products/dark-green-zibu-wealth-symbol-womens-sling-bag",
+      "design": "minimal:0"
+    },
+    {
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/story-4-checklist-cancer-zodiac-bracelet.jpg",
       "slug": "cancer-zodiac-bracelet",
       "name": "Cancer (कर्क राशि) Zodiac Howlite & Milky Quartz Healing Bracelet",
       "price": 450,
       "mrp": 700,
       "url": "https://astroaarambh.store/products/cancer-zodiac-bracelet",
-      "design": "polaroid:1"
+      "design": "checklist:1"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-3-checklist-money-magnet-pyrite-pyramid-with-free-square-raw-s.jpg",
-      "slug": "money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "name": "Prosperity Boosting Pyrite Pyramid",
-      "price": 450,
-      "mrp": 700,
-      "url": "https://astroaarambh.store/products/money-magnet-pyrite-pyramid-with-free-square-raw-selenite-plate-mhx6",
-      "design": "checklist:2"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-4-glass-pyrite-lapis-peacock-frame-capsule-shape.jpg",
-      "slug": "pyrite-lapis-peacock-frame-capsule-shape",
-      "name": "Pyrite Peacock Frame for Prosperity and Protection",
-      "price": 701,
-      "mrp": 1200,
-      "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
-      "design": "glass:1"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/story-5-magazine-dark-green-gold-detail-women-s-success-leather-wal.jpg",
-      "slug": "dark-green-gold-detail-women-s-success-leather-wallet",
-      "name": "Dark Green Gold-Detail Women’s Success Leather Wallet",
+      "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/story-5-arch-money-magnet-ladies-purse.jpg",
+      "slug": "money-magnet-ladies-purse",
+      "name": "Money Magnet Wallet for Women | Emerald Green | 808 520 741",
       "price": 490,
-      "mrp": 750,
-      "url": "https://astroaarambh.store/products/dark-green-gold-detail-women-s-success-leather-wallet",
-      "design": "magazine:1"
+      "mrp": 700,
+      "url": "https://astroaarambh.store/products/money-magnet-ladies-purse",
+      "design": "arch:0"
     }
   ],
   "post": {
-    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-27/post-luxurious-pyrite-peacock-prosperity-frame.jpg",
+    "image_url": "https://raw.githubusercontent.com/KdAnanta/astroaarambh-instagram/main/out/2026-11-28/post-cancer-zodiac-bracelet-with-free-selenite-plate.jpg",
     "source": "ready-made",
-    "file": "Luxurious Pyrite Peacock Prosperity Frame.png",
-    "slug": "pyrite-lapis-peacock-frame-capsule-shape",
-    "name": "Pyrite Peacock Frame for Prosperity and Protection",
-    "price": 701,
-    "mrp": 1200,
-    "url": "https://astroaarambh.store/products/pyrite-lapis-peacock-frame-capsule-shape",
-    "rating": 4.6,
-    "reviews": 5,
-    "category": "frame",
+    "file": "Cancer Zodiac Bracelet with Free Selenite Plate.png",
+    "slug": "cancer-zodiac-metal-bracelet-with-free-raw-selenite-plate",
+    "name": "Cancer (कर्क राशि) Metal Zodiac Bracelet with Free Raw Selenite Plate",
+    "price": 550,
+    "mrp": 999,
+    "url": "https://astroaarambh.store/products/cancer-zodiac-metal-bracelet-with-free-raw-selenite-plate",
+    "rating": 4.7,
+    "reviews": 11,
+    "category": "zodiac-bracelet",
     "benefits": [
-      "Attracts Wealth & Prosperity",
-      "Enhances Protection & Positive Energy",
-      "Promotes Growth, Success & Good Luck",
-      "Brings Stability & Abundance"
+      "Enhances Emotional Balance",
+      "Provides Protection & Inner Strength",
+      "Attracts Financial Stability",
+      "Promotes Peace, Clarity & Positive Energy"
     ],
     "stones": [],
     "keywords": [
-      "pyrite peacock frame",
-      "vastu frame for home",
-      "peacock painting vastu",
-      "lapis lazuli",
-      "home decor for prosperity",
-      "housewarming gift"
+      "Cancer bracelet",
+      "Cancer zodiac bracelet",
+      "Kark rashi bracelet",
+      "zodiac metal bracelet",
+      "selenite plate",
+      "birthday gift for Cancer zodiac",
+      "Cancer season Jun 21 - Jul 22"
     ],
     "hashtags": [
-      "pyriteframe",
-      "peacock",
-      "vastu",
-      "vastudecor",
-      "vastushastra",
-      "homedecor",
-      "homedecorindia",
-      "lapislazuli",
-      "housewarminggift",
-      "prosperity"
+      "cancer",
+      "cancerzodiac",
+      "cancerseason",
+      "cancerbracelet",
+      "karkrashi",
+      "zodiacbracelet",
+      "zodiacsigns",
+      "horoscope",
+      "astrology",
+      "crystalbracelet",
+      "selenite",
+      "birthstone",
+      "giftideas"
     ]
   },
   "missing_photos": [],
